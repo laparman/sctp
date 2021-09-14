@@ -32,7 +32,7 @@ func serveClient(conn net.Conn, bufsize int) error {
 func main() {
 	var server = flag.Bool("server", false, "")
 	var ip = flag.String("ip", "0.0.0.0", "")
-	var port = flag.Int("port", 0, "")
+	var port = 2000
 	var lport = flag.Int("lport", 0, "")
 	var bufsize = flag.Int("bufsize", 256, "")
 	var sndbuf = flag.Int("sndbuf", 0, "")
