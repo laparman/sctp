@@ -37,7 +37,7 @@ func main() {
 	var bufsize = flag.Int("bufsize", 256, "")
 	var sndbuf = flag.Int("sndbuf", 0, "")
 	var rcvbuf = flag.Int("rcvbuf", 0, "")
-
+log.Printf("port: %d", port)
 	flag.Parse()
 
 	ips := []net.IPAddr{}
